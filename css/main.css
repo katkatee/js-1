@@ -1,0 +1,71 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(100deg, #2c8a8d, #62d1a7);
+  font-size: 18px;
+}
+
+.card {
+  padding: 5%;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(57, 164, 202, 0.679);
+  overflow: hidden;
+}
+
+.card__title {
+  margin: 10px 5px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__btn {
+  padding: 8% 10%;
+  border: solid 1px black;
+  cursor: pointer;
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
+}
+
+.card__btn:hover {
+  background-color: #185e3d;
+  color: white;
+}
+
+.card__btn--mul {
+  background-color: rgba(233, 243, 43, 0.857);
+}
+
+.card__btn--sub {
+  background-color: rgba(52, 228, 58, 0.864);
+}
+
+.card__text {
+  margin: 10px 5px;
+}
+/*# sourceMappingURL=main.css.map */

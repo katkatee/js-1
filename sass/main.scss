@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient( 100deg, rgb(44, 138, 141), rgb(98, 209, 167));
+    font-size: 18px;
+}
+
+.card {
+    padding: 5%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(57, 164, 202, 0.679);
+    overflow: hidden;
+
+    &__title {
+        margin: 10px 5px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__btn {
+        padding: 8% 10%;
+        border: solid 1px black;
+        cursor: pointer;
+        transition: background-color 1s, color 1s;
+
+        &:hover {
+            background-color: rgb(24, 94, 61);
+            color: white;
+        }
+    
+        &--mul {
+            background-color: rgba(233, 243, 43, 0.857);
+        }
+
+        &--sub {
+            background-color: rgba(52, 228, 58, 0.864);
+        }
+    }
+
+    &__text {
+        margin: 10px 5px;
+    }
+}
