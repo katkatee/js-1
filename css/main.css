@@ -9,9 +9,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -21,6 +21,8 @@ body {
 }
 
 .card {
+  width: 400px;
+  height: 400px;
   padding: 5%;
   border: 2px solid black;
   border-radius: 5px;
@@ -30,7 +32,6 @@ body {
 
 .card__title {
   margin: 10px 5px;
-  text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -40,14 +41,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .card__btn {
   padding: 8% 10%;
   border: solid 1px black;
   cursor: pointer;
+  background-color: rgba(59, 235, 182, 0.59);
   -webkit-transition: background-color 1s, color 1s;
   transition: background-color 1s, color 1s;
 }
@@ -55,14 +58,6 @@ body {
 .card__btn:hover {
   background-color: #185e3d;
   color: white;
-}
-
-.card__btn--mul {
-  background-color: rgba(233, 243, 43, 0.857);
-}
-
-.card__btn--sub {
-  background-color: rgba(52, 228, 58, 0.864);
 }
 
 .card__text {
