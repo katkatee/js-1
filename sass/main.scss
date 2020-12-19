@@ -6,24 +6,30 @@
     
 body {
     display: flex;
+    flex-flow: row wrap ;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient( 100deg, rgb(44, 138, 141), rgb(98, 209, 167));
-    font-size: 18px;
+    background-color: #b1bfd8;
+    background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);   
+    background-size: contain ;
 }
 
+
 .card {
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 350px;
     height: 400px;
-    padding: 5%;
+    padding: 4%;
     border: 2px solid black;
     border-radius: 5px;
     background-color: rgba(57, 164, 202, 0.679);
     overflow: hidden;
 
     &__title {
-        margin: 10px 5px;
+        margin: 10px;
         font-size: 1.8rem;
         font-weight: bold;
         text-transform: uppercase;
@@ -31,11 +37,15 @@ body {
 
     &__btns {
         display: flex;
-        justify-content: space-evenly;    
+        flex-flow: row nowrap;
+        width: 100%;
+        padding: 10px 0;
     }
 
     &__btn {
-        padding: 8% 10%;
+        align-items: stretch;
+        width: 100%;
+        padding: 6% 4%;
         border: solid 1px black;
         cursor: pointer;
         background-color: rgba(59, 235, 182, 0.59);
@@ -49,5 +59,20 @@ body {
 
     &__text {
         margin: 10px 5px;
+
+        &--result {
+            color:rgb(44, 138, 141);
+            font-size: 0.8rem;
+        }
     }
+
+    &__input {
+        width: 100%;
+        padding: 5px;
+        background-color:rgba(59, 235, 182, 0.59);
+        border: solid 1px black;
+    }
+
+    
+
 }

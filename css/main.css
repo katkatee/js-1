@@ -9,6 +9,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -16,14 +20,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-image: linear-gradient(100deg, #2c8a8d, #62d1a7);
-  font-size: 18px;
+  background-color: #b1bfd8;
+  background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+  background-size: contain;
 }
 
 .card {
-  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 350px;
   height: 400px;
-  padding: 5%;
+  padding: 4%;
   border: 2px solid black;
   border-radius: 5px;
   background-color: rgba(57, 164, 202, 0.679);
@@ -31,7 +46,7 @@ body {
 }
 
 .card__title {
-  margin: 10px 5px;
+  margin: 10px;
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -41,13 +56,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  padding: 10px 0;
 }
 
 .card__btn {
-  padding: 8% 10%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  padding: 6% 4%;
   border: solid 1px black;
   cursor: pointer;
   background-color: rgba(59, 235, 182, 0.59);
@@ -62,5 +84,17 @@ body {
 
 .card__text {
   margin: 10px 5px;
+}
+
+.card__text--result {
+  color: #2c8a8d;
+  font-size: 0.8rem;
+}
+
+.card__input {
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(59, 235, 182, 0.59);
+  border: solid 1px black;
 }
 /*# sourceMappingURL=main.css.map */
